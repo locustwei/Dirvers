@@ -18,6 +18,6 @@ locustwei@outlook.com
 
 安装 LdProtec.inf，驱动安装后重启系统，或手动启动驱动（命令行执行 sc ）
 
-说明：Windows 64位系统驱动需要数字签名（有关驱动数字签名参考https://docs.microsoft.com/zh-cn/windows-hardware/drivers/install/windows-driver-signing-tutorial）
-      32系统位则不需要。可以禁用Windows驱动数字签名测试（有关如何禁用签名请Google）
+说明：本驱动文件LdPortect.sys签名是测试驱动签名，如要安装测试需要Windows系统进入测试模式才能启动驱动。
+      参见：命令 bcdedit /set testsigning on。
 
