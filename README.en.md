@@ -18,5 +18,5 @@ Process protection: protect running processes from being forced to terminate, re
 
 Install LdProtec.inf, restart the system after the driver is installed, or start the driver manually (execute sc on the command line)
 
-Note: Windows 64-bit system drivers require digital signatures (for driver digital signatures, refer to https://docs.microsoft.com/zh-cn/windows-hardware/drivers/install/windows-driver-signing-tutorial)
-       32 system bit is not required. Windows driver digital signature testing can be disabled (please Google for how to disable signing)
+Note: The signature of the driver file LdPortect.sys is a test driver signature. If you want to install and test, you need to enter the test mode of the Windows system to start the driver.
+       See: Command bcdedit /set testsigning on.
